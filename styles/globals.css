@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fafafa;
+  --foreground: #333333;
+
+  --link: "#7575775";
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a;
+    --foreground: #ededed; */
+  }
+}
+
+@font-face {
+  font-family: "Proxima Nova Light";
+  src: url("/fonts/proximanova_light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("/fonts/proximanova_bold.otf") format("opentype");
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Proxima Nova Light", Helvetica, sans-serif;
+}
+
+.text-8xl {
+  font-family: "Proxima Nova Bold", Helvetica, sans-serif;
+}
+
+a {
+  color: var(--link);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

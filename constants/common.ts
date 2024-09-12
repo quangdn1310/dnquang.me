@@ -7,7 +7,7 @@ import {
 
 export const NAV_LINKS = [
   { text: "about", path: "/about" },
-  { text: "book", path: "/book" },
+  { text: "projects", path: "/projects" },
   { text: "portfolio", path: "/portfolio" },
   { text: "blog", path: "/blog" },
   { text: "contact", path: "/contact" },

@@ -1,7 +1,7 @@
 import MotionDiv from "@/components/MotionDiv";
 import React from "react";
 
-const Book = () => {
+const Projects = () => {
   return (
     <div>
       <section className="bg-white">
@@ -9,7 +9,7 @@ const Book = () => {
           <div className="flex items-center justify-between border-b">
             <MotionDiv
               className="w-[40%] space-y-4"
-              initial={{ opacity: 0, x: "-100%" }}
+              initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, easing: "ease-in" }}
             >
@@ -17,7 +17,7 @@ const Book = () => {
             </MotionDiv>
             <MotionDiv
               className="w-[60%] h-[460px] relative overflow-hidden"
-              initial={{ opacity: 0, x: "100%" }}
+              initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, easing: "ease-in" }}
             >
@@ -30,4 +30,4 @@ const Book = () => {
   );
 };
 
-export default Book;
+export default Projects;

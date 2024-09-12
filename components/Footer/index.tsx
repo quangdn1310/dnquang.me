@@ -1,3 +1,4 @@
+import { NAV_LINKS } from "@/constants/common";
 import Link from "next/link";
 import React from "react";
 
@@ -9,21 +10,13 @@ const Footer = () => {
           © 2024 Dang Quang
         </Link>
         <ul className="flex gap-x-4">
-          <li>
-            <Link href="about hover:text-[#333333]">about</Link>
-          </li>
-          <li>
-            <Link href="about hover:text-[#333333]">book</Link>
-          </li>
-          <li>
-            <Link href="about hover:text-[#333333]">portfolio</Link>
-          </li>
-          <li>
-            <Link href="about hover:text-[#333333]">blog</Link>
-          </li>
-          <li>
-            <Link href="about hover:text-[#333333]">contact</Link>
-          </li>
+          {NAV_LINKS.map((nav) => (
+            <li key={nav.text}>
+              <Link href={nav.path} className="hover:text-[#333333]">
+                {nav.text}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </footer>

@@ -1,6 +1,7 @@
 "use client";
 import { Column } from "@ant-design/charts";
-import React from "react";
+import { useInView, motion } from "framer-motion";
+import React, { useRef } from "react";
 
 const data = [
   { type: "Teamwork", level: 85 },
@@ -11,6 +12,9 @@ const data = [
 ];
 
 const ChartSkills = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.5 });
+
   const logo = [
     ["Teamwork", "/images/skills/teamwork.png"],
     ["Software Development", "/images/skills/code.png"],
@@ -21,6 +25,7 @@ const ChartSkills = () => {
   const chartRef = React.useRef();
   const config = {
     data,
+    animate: { enter: { type: "growInY" } },
     xField: "type",
     yField: "level",
     colorField: "type",
@@ -50,7 +55,9 @@ const ChartSkills = () => {
       },
     },
   };
-  return <Column {...config} />;
+  return (
+    <motion.div ref={ref}>{isInView && <Column {...config} />}</motion.div>
+  );
 };
 
 export default ChartSkills;

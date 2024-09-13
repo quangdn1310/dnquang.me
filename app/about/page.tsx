@@ -3,6 +3,7 @@ import Part from "@/components/About/Part";
 import ChartSkills from "@/components/About/ChartSkills";
 import MotionDiv from "@/components/MotionDiv";
 import Link from "next/link";
+import { ABOUT_COLLECTION } from "@/constants/common";
 
 const page = () => {
   return (
@@ -52,7 +53,7 @@ const page = () => {
           </div>
 
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-8">
-            {Array.from({ length: 6 }).map((item, index) => (
+            {ABOUT_COLLECTION.map((item, index) => (
               <MotionDiv
                 key={index}
                 className="p-2 bg-white shadow-md rounded-md"
@@ -65,9 +66,9 @@ const page = () => {
                 }}
               >
                 <img
-                  className="w-full aspect-square rounded-sm"
-                  src={`https://loremflickr.com/200/200?random=${index}`}
-                  alt="Image"
+                  className="w-full aspect-square object-cover object-center rounded-sm"
+                  src={item.path}
+                  alt={item.name}
                 />
               </MotionDiv>
             ))}
@@ -95,6 +96,7 @@ const page = () => {
               <li>Typescipt</li>
               <li>React/NextJS</li>
               <li>TailwindCss</li>
+              <li>BootStrap</li>
             </ul>
           </div>
         </div>
@@ -143,7 +145,7 @@ const page = () => {
               included key things I've learned, book recommendations, and even
               some sneak peeks of the projects I've worked on.
             </p>
-            <Link href="" className="underline underline-offset-2">
+            <Link href="/blog" className="underline underline-offset-2">
               Read my story
             </Link>
           </MotionDiv>

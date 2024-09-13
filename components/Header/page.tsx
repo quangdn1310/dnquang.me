@@ -24,12 +24,21 @@ const Header = () => {
           <nav className="">
             <ul className="flex gap-x-4">
               {NAV_LINKS.map((nav) => (
-                <li className="px-2" key={nav.text}>
+                <li
+                  className={`px-2 relative ${
+                    nav.disabled
+                      ? "before:content-['soon'] before:absolute before:top-0 before:-left-1 before:text-[#eeeeee] before:text-[10px] before:-rotate-12"
+                      : ""
+                  }`}
+                  key={nav.text}
+                >
                   <Link
                     href={nav.path}
                     className={`text-lg ${
                       nav.path === currentPath ? "text-gray-500" : "text-white"
-                    } transition-all hover:text-gray-500`}
+                    } transition-all hover:text-gray-500 ${
+                      nav.disabled ? "disabled" : ""
+                    }`}
                   >
                     {nav.text}
                   </Link>

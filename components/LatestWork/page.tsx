@@ -1,26 +1,6 @@
 import React from "react";
 import Card from "../Card/page";
-
-const items = [
-  {
-    id: 1,
-    thumb: "",
-    title: "Project 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 2,
-    thumb: "",
-    title: "Project 2",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 3,
-    thumb: "",
-    title: "Project 3",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-];
+import { LATEST_WORKS } from "@/constants/common";
 
 const LatestWork = () => {
   return (
@@ -30,8 +10,8 @@ const LatestWork = () => {
           Some of my latest work
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-5">
-          {items.map((item) => (
-            <Card key={item.id} item={item} />
+          {LATEST_WORKS.map((item) => (
+            <Card key={item.link} item={item} />
           ))}
         </div>
       </div>

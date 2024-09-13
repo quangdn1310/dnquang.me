@@ -7,6 +7,7 @@
   --foreground: #333333;
 
   --link: #757575;
+  --disabled: #949494;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,8 +42,14 @@ a {
   color: var(--link);
 }
 
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: var(--disabled);
+}
+
 section + section {
-  border-top: 1px solid #eeeeee;
+  border-top: 2px solid #eeeeee;
 }
 
 @layer utilities {

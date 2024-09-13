@@ -7,7 +7,7 @@ import {
 
 export const NAV_LINKS = [
   { disabled: false, text: "about", path: "/about" },
-  { disabled: true, text: "projects", path: "/projects" },
+  { disabled: false, text: "projects", path: "/projects" },
   { disabled: true, text: "portfolio", path: "/portfolio" },
   { disabled: true, text: "blog", path: "/blog" },
   { disabled: false, text: "contact", path: "/contact" },
@@ -23,16 +23,6 @@ export const SOCIAL_LINKS = [
   { icon: TwitterOutlined, text: "twitter", link: "/", color: "#1da1f2" },
   { icon: InstagramOutlined, text: "instagram", link: "/", color: "#c32aa3" },
   { icon: SkypeOutlined, text: "skype", link: "/", color: "#00aff0" },
-];
-
-export const PROJECTS = [
-  {
-    link: "https://moviesdb-app.vercel.app/",
-    title: "Movie Box",
-    desc: "MovieBox is a platform for sharing information and video trailers of the latest movies based on the TMDB (The Movie Database) database.",
-    thumb: "/images/projects/moviebox_poster.png",
-    time: "Mar, 2024",
-  },
 ];
 
 export const LATEST_WORKS = [

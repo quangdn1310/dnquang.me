@@ -32,7 +32,7 @@ const ContactForm = () => {
             <TextArea rows={5} className="w-full text-lg border-[#949494]" />
           </Form.Item>
           <Form.Item className="flex justify-end">
-            <ButtonOutline type="primary" htmlType="submit">
+            <ButtonOutline type="primary" htmlType="submit" disabled={true}>
               Send email
             </ButtonOutline>
           </Form.Item>

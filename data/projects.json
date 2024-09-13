@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "link": "https://moviesdb-app.vercel.app/",
+    "title": "Movie Box",
+    "desc": "MovieBox is a platform for sharing information and video trailers of the latest movies based on the TMDB (The Movie Database) database.",
+    "poster": "/images/projects/moviebox_poster.png",
+    "time": "Mar, 2024",
+    "type": "outstanding"
+  }
+]

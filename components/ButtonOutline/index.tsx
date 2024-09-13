@@ -10,9 +10,14 @@ const ButtonOutline: React.FC<ButtonOutlineProps> = (props) => {
       type={props.type}
       htmlType={props.htmlType || "button"}
       className={cn(
-        "px-8 py-2 h-14 bg-[#343333] border-[#343333] transition-all hover:!bg-transparent hover:!text-black text-lg font-bold rounded-md",
+        `px-8 py-2 h-14 bg-[#343333] border-[#343333] ${
+          !props.disabled
+            ? "transition-all hover:!bg-transparent hover:!text-black"
+            : ""
+        } text-lg font-bold rounded-md`,
         props.className
       )}
+      disabled={props.disabled}
     >
       {props.children}
     </Button>

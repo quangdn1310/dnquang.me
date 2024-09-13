@@ -30,10 +30,10 @@ const Contact = () => {
                         className="flex items-center gap-x-4"
                       >
                         <div
-                          className="w-12 h-12 rounded-full p-2"
+                          className="w-12 h-12 rounded-full p-3"
                           style={{ backgroundColor: soc.color }}
                         >
-                          <IconComponent className="text-3xl text-white" />
+                          <IconComponent className="text-2xl text-white" />
                         </div>
                         <span
                           className="text-xl font-bold capitalize"

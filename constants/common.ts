@@ -1,15 +1,16 @@
 import {
   GithubOutlined,
   InstagramOutlined,
+  LinkedinOutlined,
   SkypeOutlined,
-  TwitterOutlined,
+  XOutlined,
 } from "@ant-design/icons";
 
 export const NAV_LINKS = [
   { disabled: false, text: "about", path: "/about" },
   { disabled: false, text: "projects", path: "/projects" },
   { disabled: true, text: "portfolio", path: "/portfolio" },
-  { disabled: true, text: "blog", path: "/blog" },
+  { disabled: false, text: "blog", path: "/blog" },
   { disabled: false, text: "contact", path: "/contact" },
 ];
 
@@ -20,8 +21,13 @@ export const SOCIAL_LINKS = [
     link: "https://github.com/quangdn1310",
     color: "#353235",
   },
-  { icon: TwitterOutlined, text: "twitter", link: "/", color: "#1da1f2" },
-  { icon: InstagramOutlined, text: "instagram", link: "/", color: "#c32aa3" },
+  { icon: XOutlined, text: "X", link: "/", color: "#000000" },
+  {
+    icon: LinkedinOutlined,
+    text: "linkedin",
+    link: "https://www.linkedin.com/in/quangdn1310/",
+    color: "#0a66c2",
+  },
   { icon: SkypeOutlined, text: "skype", link: "/", color: "#00aff0" },
 ];
 

@@ -18,7 +18,7 @@ const Header = () => {
     <header className="w-full bg-black py-5">
       <div className="container flex flex-wrap gap-4 justify-center lg:justify-between items-center">
         <Link href="/">
-          <img src="./images/logo.png" alt="Logo" className="w-20" />
+          <img src="/images/logo.png" alt="Logo" className="w-20" />
         </Link>
         <div className="flex items-center gap-x-12">
           <nav className="">

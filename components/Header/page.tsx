@@ -22,7 +22,7 @@ const Header = () => {
         </Link>
         <div className="flex items-center gap-x-12">
           <nav className="">
-            <ul className="flex gap-x-4">
+            <ul className="flex gap-x-2 md:gap-x-4">
               {NAV_LINKS.map((nav) => (
                 <li
                   className={`px-2 relative ${

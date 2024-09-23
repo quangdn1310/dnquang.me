@@ -19,7 +19,7 @@ const HeroBanner = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeIn" }}
         >
-          <h1 className="title text-8xl">&#60;coder&#62;</h1>
+          <h1 className="title text-7xl md:text-8xl">&#60;coder&#62;</h1>
           <Link href="/about" className="text-lg tracking-widest">
             Front-End Developer who writes <br /> clean, elegant and efficient
             code.

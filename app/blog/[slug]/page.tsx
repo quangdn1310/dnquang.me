@@ -43,7 +43,7 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, easing: "ease-in" }}
         >
-          <h1 className="title text-6xl lg:text-8xl">{blogData.title}.</h1>
+          <h1 className="title text-6xl lg:text-7xl md:text-8xl">{blogData.title}.</h1>
           <p className="text-lg">{blogData.description}</p>
         </MotionDiv>
 
@@ -72,11 +72,11 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
         </div>
 
         <div className="mt-8">
-          <div className="flex">
+          <div className="flex flex-col lg:flex-row gap-4">
             <div className="flex-1 lg:px-20 lg:border-l border-[#cecece]">
               {parse(blogData.content)}
             </div>
-            <div className="lg:w-[300px]">
+            <div className="w-full lg:w-[300px] order-first lg:order-last">
               <TOC content={blogData.content} />
             </div>
           </div>

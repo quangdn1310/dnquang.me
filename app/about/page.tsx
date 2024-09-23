@@ -17,7 +17,7 @@ const page = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, easing: "ease-in" }}
             >
-              <h1 className="title text-8xl">about.</h1>
+              <h1 className="title text-7xl md:text-8xl">about.</h1>
               <p className="text-xl text-[#757575] tracking-widest">
                 I'm a software developer based in <br /> Ho Chi Minh, Vietnam.
               </p>
@@ -28,7 +28,7 @@ const page = () => {
               </p>
             </MotionDiv>
             <MotionDiv
-              className="w-full lg:w-[60%] h-[460px] relative overflow-hidden"
+              className="w-full lg:w-[60%] h-[280px] lg:h-[460px] relative overflow-hidden"
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, easing: "ease-in" }}
@@ -52,7 +52,7 @@ const page = () => {
             </MotionDiv>
           </div>
 
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-8">
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-4 mt-8">
             {ABOUT_COLLECTION.map((item, index) => (
               <MotionDiv
                 key={index}
@@ -76,19 +76,8 @@ const page = () => {
         </div>
       </section>
       <section className="py-10">
-        <div className="container flex flex-col md:flex-row gap-4 justify-between items-center">
-          <div className="w-full md:w-1/3 text-center md:text-left">
-            <h1 className="text-3xl mb-5">Back-end development</h1>
-            <ul className="space-y-3">
-              <li>Express</li>
-              <li>MongoDB</li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/3">
-            <div className="w-4/5 mx-auto">
-              <Part />
-            </div>
-          </div>
+        <div className="container flex flex-col md:flex-row gap-x-4 justify-between items-center">
+          
           <div className="w-full md:w-1/3 text-center md:text-left">
             <h1 className="text-3xl mb-5">Front-end development</h1>
             <ul className="space-y-3">
@@ -97,6 +86,18 @@ const page = () => {
               <li>React/NextJS</li>
               <li>TailwindCss</li>
               <li>BootStrap</li>
+            </ul>
+          </div>
+          <div className="w-full md:w-1/3">
+            <div className="w-4/5 mx-auto">
+              <Part />
+            </div>
+          </div>
+          <div className="w-full md:w-1/3 text-center md:text-left">
+            <h1 className="text-3xl mb-5">Back-end development</h1>
+            <ul className="space-y-3">
+              <li>Express</li>
+              <li>MongoDB</li>
             </ul>
           </div>
         </div>

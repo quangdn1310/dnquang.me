@@ -26,11 +26,11 @@ interface CardBlogProps {
 const CardBlog: React.FC<CardBlogProps> = ({ index, blog }) => {
   return (
     <div
-      className={`relative py-4 px-2 border-t ${
-        index % 2 !== 0 ? "bg-[#ececec]" : ""
+      className={`relative lg:py-4 lg:px-2 border-t ${
+        index % 2 !== 0 ? "bg-[#f8f8f8]" : ""
       }`}
     >
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col lg:flex-row gap-4 justify-between items-center">
         <div className="flex-1">
           <div className="flex items-center">
             <img
@@ -63,7 +63,7 @@ const CardBlog: React.FC<CardBlogProps> = ({ index, blog }) => {
           </Link>
         </div>
 
-        <div className="w-52 h-32 bg-gray-400 rounded-md">
+        <div className="w-full lg:w-52 h-36 lg:h-32 bg-gray-400 rounded-md order-first lg:order-last">
           <img
             src={blog.thumb || "./images/default-image.jpg"}
             alt={blog.title}

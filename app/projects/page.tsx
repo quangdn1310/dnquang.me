@@ -84,7 +84,7 @@ const Projects = () => {
               transition={{ duration: 0.8, easing: "ease-in" }}
             >
               <p>Outstanding</p>
-              <h1 className="title text-8xl">{outsProject.title}.</h1>
+              <h1 className="title text-7xl md:text-8xl">{outsProject.title}.</h1>
               <p>{outsProject.desc}.</p>
               <ButtonOutline type="primary">
                 <Link href={outsProject.link}>Visit Now</Link>

@@ -16,7 +16,7 @@ const Contact = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, easing: "ease-in" }}
             >
-              <h1 className="title text-8xl">contact.</h1>
+              <h1 className="title text-7xl md:text-8xl">contact.</h1>
               <p className="text-xl tracking-wider">
                 Get in touch with me via social media or email.
               </p>

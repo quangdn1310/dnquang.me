@@ -18,7 +18,7 @@ const Blog = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, easing: "ease-in" }}
           >
-            <h1 className="title text-8xl">Personal blog.</h1>
+            <h1 className="title text-7xl md:text-8xl">Personal blog.</h1>
             <p className="text-lg">Web development thoughts and stories.</p>
           </MotionDiv>
         </div>

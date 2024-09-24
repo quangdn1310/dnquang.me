@@ -33,13 +33,13 @@ const page = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, easing: "ease-in" }}
             >
-              <div
+              {/* <div
                 className="absolute inset-0 opacity-10"
                 style={{
                   background: "url(/images/music-notes.png) no-repeat",
                   backgroundSize: "cover",
                 }}
-              ></div>
+              ></div> */}
               <div
                 className="absolute inset-0 h-[110%]"
                 style={{

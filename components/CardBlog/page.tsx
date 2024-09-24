@@ -34,7 +34,7 @@ const CardBlog: React.FC<CardBlogProps> = ({ index, blog }) => {
         <div className="flex-1">
           <div className="flex items-center">
             <img
-              src={blog.author.avatar || "./images/default-image.jpg"}
+              src={blog.author.avatar || "./images/default-avatar.jpg"}
               alt={blog.author.name}
               className="w-10 h-10 rounded-full bg-[#eeeeee]"
             />

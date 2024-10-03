@@ -22,6 +22,9 @@ const config: Config = {
           xl: "1120px", // extra-large
         },
       },
+      fontFamily: {
+        proxima: ["Proxima Nova Bold", "Helvetica", "sans-serif"],
+      },
     },
   },
   plugins: [],

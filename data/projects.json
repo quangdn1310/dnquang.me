@@ -12,7 +12,7 @@
     "id": 2,
     "link": "https://quangdn1310.github.io/audio-book/",
     "title": "Audio Book",
-    "desc": "",
+    "desc": "I’ve worked on building a seamless and user-friendly platform dedicated to delivering high-quality audiobook experiences. Our website features a robust library of audiobooks, offering users easy access to their favorite titles across various genres.",
     "poster": "/images/projects/audio_book.png",
     "time": "Mar, 2024",
     "type": "normal"
@@ -21,7 +21,7 @@
     "id": 3,
     "link": "https://quangdn1310.github.io/zayarum-store/",
     "title": "Zayarum Store",
-    "desc": "",
+    "desc": "Drawing inspiration from Zayarum’s unique and stunning design, I wanted to try recreating it with the goal of enhancing my own knowledge.",
     "poster": "/images/projects/zayarum.png",
     "time": "Mar, 2024",
     "type": "normal"
@@ -30,7 +30,7 @@
     "id": 4,
     "link": "https://quangdn1310.github.io/sudoku/",
     "title": "Sudoku Game",
-    "desc": "",
+    "desc": "I attempted to create a Sudoku puzzle game with 4 difficulty levels: easy, medium, hard, and very hard. The game stores player information and scores in LocalStorage for a personalized experience. Players can track their progress and compete with their previous scores, making the gameplay more engaging and enjoyable",
     "poster": "/images/projects/sudoku_dark.png",
     "time": "Oct, 2021",
     "type": "normal"

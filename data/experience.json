@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "company": "Nova square",
+      "start_date": "Aug 2023",
+      "end_date": "Sep 2024",
+      "position": "Frontend Developer",
+      "description": "I joined the company as an intern, and my work was recognized, leading to a full-time position. At Nova Square, I focused on web and application development using React. During more than a year of learning and working here, I consistently completed my tasks well and continuously improved myself.",
+      "work_details": ["Contributed to web application development projects using React.", "Redesigned the website's front page from vanilla HTML, CSS to use React,TailwindCss.", "Collaborated with the backend development team.", "Assisting in creating responsive and interactive user interfaces based on project requirements"],
+      "work_type": "fulltime"
+    },
+    {
+        "id": 2,
+        "company": "C-Force Vietnam",
+        "start_date": "Feb 2023",
+        "end_date": "Aug 2023",
+        "position": "Abap Developer",
+        "description": "When C-Force came to my university, they expressed interest in recruiting students from our school, and I was fortunate to be one of those selected. I participated in a 6-month training course on SAP ABAP conducted by an expert with 10+ years of experience and successfully completed it. However, due to some unforeseen reasons, we were no longer able to collaborate with them.",
+        "work_details": ["Engaged in a training program focused on SAP (ABAP) development", "Creating and modifying reports, interfaces, forms, and enhancements.", "Actively participated in training sessions and practical exercises."],
+        "work_type": "fulltime"
+      }
+]
+  

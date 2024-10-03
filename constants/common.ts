@@ -9,7 +9,7 @@ import {
 export const NAV_LINKS = [
   { disabled: false, text: "about", path: "/about" },
   { disabled: false, text: "projects", path: "/projects" },
-  { disabled: true, text: "portfolio", path: "/portfolio" },
+  { disabled: false, text: "experience", path: "/experience" },
   { disabled: false, text: "blog", path: "/blog" },
   { disabled: false, text: "contact", path: "/contact" },
 ];

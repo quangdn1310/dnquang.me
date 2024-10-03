@@ -33,7 +33,10 @@ const Projects = () => {
 
   useEffect(() => {
     if (PROJECTS.length) {
-      const projects = PROJECTS.map((proj) => ({
+
+      const filteredProjects = PROJECTS.filter((project) => project.type !== "outstanding");
+
+      const projects = filteredProjects.map((proj) => ({
         id: proj.id,
         link: proj.link,
         title: proj.title,

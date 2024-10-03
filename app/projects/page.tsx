@@ -58,11 +58,11 @@ const Projects = () => {
 
   return (
     <div>
-      <section className="bg-white pt-14">
+      <section className="bg-white lg:pt-14">
         <div className="container">
-          <div className="flex items-center flex-col lg:flex-row gap-2 justify-between">
+          <div className="flex items-center flex-col lg:flex-row gap-2 justify-between py-5">
             <MotionDiv
-              className="w-full lg:w-1/2 h-[340px] sm:h-[460px] relative overflow-hidden lg:order-last"
+              className="w-full lg:w-1/2 h-[260px] sm:h-[460px] relative overflow-hidden lg:order-last"
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, easing: "ease-in" }}

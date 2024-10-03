@@ -59,7 +59,7 @@ const Projects = () => {
         <div className="container">
           <div className="flex items-center flex-col lg:flex-row gap-2 justify-between">
             <MotionDiv
-              className="w-full lg:w-1/2 h-[460px] relative overflow-hidden lg:order-last"
+              className="w-full lg:w-1/2 h-[340px] sm:h-[460px] relative overflow-hidden lg:order-last"
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, easing: "ease-in" }}

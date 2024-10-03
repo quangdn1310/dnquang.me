@@ -63,7 +63,7 @@ const CardBlog: React.FC<CardBlogProps> = ({ index, blog }) => {
           </Link>
         </div>
 
-        <div className="w-full lg:w-52 h-36 lg:h-32 bg-gray-400 rounded-md order-first lg:order-last">
+        <div className="w-full lg:w-52 h-36 lg:h-32 bg-gray-400 rounded-md overflow-hidden order-first lg:order-last">
           <img
             src={blog.thumb || "./images/default-image.jpg"}
             alt={blog.title}

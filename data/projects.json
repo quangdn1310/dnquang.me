@@ -7,5 +7,32 @@
     "poster": "/images/projects/moviebox_poster.png",
     "time": "Mar, 2024",
     "type": "outstanding"
+  },
+  {
+    "id": 2,
+    "link": "https://quangdn1310.github.io/audio-book/",
+    "title": "Audio Book",
+    "desc": "",
+    "poster": "/images/projects/audio_book.png",
+    "time": "Mar, 2024",
+    "type": "normal"
+  },
+  {
+    "id": 3,
+    "link": "https://quangdn1310.github.io/zayarum-store/",
+    "title": "Zayarum Store",
+    "desc": "",
+    "poster": "/images/projects/zayarum.png",
+    "time": "Mar, 2024",
+    "type": "normal"
+  },
+  {
+    "id": 4,
+    "link": "https://quangdn1310.github.io/sudoku/",
+    "title": "Sudoku Game",
+    "desc": "",
+    "poster": "/images/projects/sudoku_dark.png",
+    "time": "Oct, 2021",
+    "type": "normal"
   }
 ]

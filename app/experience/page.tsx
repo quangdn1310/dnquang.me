@@ -28,16 +28,6 @@ const Experience = () => {
 
         <div className="mt-8">
           <div className="flex flex-col lg:flex-row gap-4">
-            <div className="flex-1 lg:px-20 lg:border-l border-[#cecece]">
-              <h2 className="text-4xl font-bold font-proxima mb-2">
-                Freelance
-              </h2>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-8">
-          <div className="flex flex-col lg:flex-row gap-4">
             <div className="flex-1 lg:px-20 lg:border-l border-[#cecece] space-y-6">
               <h2 className="text-4xl font-bold font-proxima">
                 Full-time Work
@@ -67,8 +57,15 @@ const Experience = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full lg:w-[300px] order-first lg:order-last">
-              {/* <TOC content={blogData.content} /> */}
+          </div>
+        </div>
+
+        <div className="mt-8">
+          <div className="flex flex-col lg:flex-row gap-4">
+            <div className="flex-1 lg:px-20 lg:border-l border-[#cecece]">
+              <h2 className="text-4xl font-bold font-proxima mb-2">
+                Freelance
+              </h2>
             </div>
           </div>
         </div>
